@@ -20,6 +20,9 @@ public class ModelTabeleKlijent  extends AbstractTableModel {
 //    ArrayList<Angazovanje> listaAngazovanja;
     //        TODO: Zameni Object za agregaciju
     ArrayList<Object> lista;
+    
+    //ukoliko treba da se popuni neki objekat na osnovu samo odredjenog atributa, bice potreba lista kao npr listaKnjiga
+//    ArrayList<Knjiga> listaKnjiga;
 //    String nazivProjekta = "";
 
 //    public String getNazivProjekta() {
@@ -114,6 +117,20 @@ public class ModelTabeleKlijent  extends AbstractTableModel {
 //
 //                    break;
 //                }
+            
+            
+            // ukoliko je potrebno popuniti objekat na osnovu nekog atributa, radi se na sledeci nacin
+//            case 1:
+//                sr.setRb(rowIndex+1);
+//                for (Knjiga k : listaKnjiga) {
+//                    if (k.getNaziv().equals(aValue)){
+//                        sr.setKnjiga(k);
+//                    }
+//                }
+//                sr.getKnjiga().setNaziv((String) aValue);
+//                sr.getKnjiga().setAutor(sr.getKnjiga().getAutor());
+//                sr.getKnjiga().setCena(sr.getKnjiga().getCena());
+//                break;
 
         }
     }
