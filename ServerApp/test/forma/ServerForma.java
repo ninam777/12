@@ -18,7 +18,7 @@ import server.PokretanjeServera;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class ServerForma extends javax.swing.JFrame {
 
@@ -129,7 +129,7 @@ public class ServerForma extends javax.swing.JFrame {
     public void srediTabelu() {
 
         ArrayList<PrikazKlasa> lista = Kontroler.getInstanca().vratiPrikaz();
-        ArrayList<PrikazKlasa> filtriranaLista = new ArrayList<>();
+        ArrayList<PrikazKlasa> filtriranaLista = lista;
 
 //        
         ModelTabeleServer mts = new ModelTabeleServer(filtriranaLista);
@@ -238,3 +238,26 @@ public class ServerForma extends javax.swing.JFrame {
 //            }
 //
 //        }
+
+//*SORT za 2 kolone, ako je potrebno samo za jednu izbrisi od drugog ifa nadalje
+//private void sort(ArrayList<PrikazKlasa> lista) {
+//        PrikazKlasa pom;
+//
+//        for (int i = 0; i < lista.size() - 1; i++) {
+//            for (int j = i + 1; j < lista.size(); j++) {
+//                if (lista.get(i).getBrProdPrim() <= lista.get(j).getBrProdPrim()) {
+//                    pom = lista.get(i);
+//                    lista.set(i, lista.get(j));
+//                    lista.set(j, pom);
+//                    if (lista.get(i).getBrProdPrim() == lista.get(j).getBrProdPrim()) {
+//                        if (lista.get(i).getPrihod() < lista.get(j).getPrihod()) {
+//                            pom = lista.get(i);
+//                            lista.set(i, lista.get(j));
+//                            lista.set(j, pom);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//
+//    }

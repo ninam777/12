@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class ParseDate {
     

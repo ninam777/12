@@ -24,7 +24,7 @@ import transfer.ServerskiTransferObjekat;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class KlijentForma extends javax.swing.JFrame {
 

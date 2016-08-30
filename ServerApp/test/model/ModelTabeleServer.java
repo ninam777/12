@@ -11,7 +11,7 @@ import pomocneKlase.PrikazKlasa;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class ModelTabeleServer extends AbstractTableModel{
 

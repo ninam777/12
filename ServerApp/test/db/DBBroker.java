@@ -19,7 +19,7 @@ import pomocneKlase.PrikazKlasa;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class DBBroker {
 
@@ -36,7 +36,7 @@ public class DBBroker {
     public void otvoriKonekciju() {
         try {
             // TODO: promeni ime baze ako treba, ako postoji grupa pogledaj
-            konekcija = DriverManager.getConnection("jdbc:mysql://localhost:3306/prosoftjul16", "root", "");
+            konekcija = DriverManager.getConnection("jdbc:mysql://localhost:3306/prosoftseptembar16", "root", "");
             konekcija.setAutoCommit(false);
         } catch (SQLException ex) {
             System.out.println("Nije otvorena konekcija");
@@ -66,7 +66,7 @@ public class DBBroker {
             Logger.getLogger(DBBroker.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-// *metora vratiListu
+// *metoda vratiListu
 //    public ArrayList<Angazovanje> vratiListuAngazovanja() {
 //        String upit = "Select * from angazovanje";
 //        ArrayList<Angazovanje> lista = new ArrayList<>();
@@ -108,7 +108,7 @@ public class DBBroker {
     
 //    public void sacuvajProjekat(Projekat proj) throws SQLException {
 //        String upit = "INSERT INTO Projekat(ProjekatID,Naziv,DatumOd,DatumDo,VrstaID) VALUES (?,?,?,?,?)";
-//        int maksID = vratiMaksIDDez();
+//        int maksID = vratiMaksID();
 //        PreparedStatement ps = konekcija.prepareStatement(upit);
 //        ps.setInt(1, maksID+1);
 //        ps.setString(2, proj.getNaziv());
@@ -121,7 +121,7 @@ public class DBBroker {
 //    public void sacuvajAngazovanje(Angazovanje ang) throws SQLException {
 //        String upit = "INSERT INTO Angazovanje(AngazovanjeID,InzenjerID,ProjekatID,DatumAngazovanja) VALUES (?,?,?,?)";
 //        ang.getProjekat().setProjekatID(vratiMaksIDDez()+1);
-//        int maksID = vratiMaksIDDez2();
+//        int maksID = vratiMaksID2();
 //        PreparedStatement ps = konekcija.prepareStatement(upit);
 //        ps.setInt(1, maksID+1);
 //        ps.setInt(2, ang.getInzenjer().getInzenjerID());
@@ -153,7 +153,7 @@ public class DBBroker {
 
 //      *MAXID
 //    
-//    private int vratiMaksIDDez() {
+//    private int vratiMaksID() {
 //        String upit = "Select max(ProjekatID) as maks from Projekat";
 //        int maks = 0;
 //
@@ -276,6 +276,31 @@ public class DBBroker {
 //        ps.setInt(2, sr.getRB());
 //
 //        ps.executeUpdate();
+//    }
+    
+    //*ZA COMI
+//    public VrstaProjekta vratiVrstuProjekatPoIdu(int id){
+//    
+//        String upit = "select * from vrstaprojekta where VrstaProjekta= "+id;
+//        VrstaProjekta vp = new VrstaProjekta();
+//
+//        try {
+//            Statement s = konekcija.createStatement();
+//            ResultSet rs = s.executeQuery(upit);
+//            while (rs.next()) {
+//                
+//                String naziv = rs.getString("Naziv");
+//                
+//                vp = new VrstaProjekta(id, naziv);
+//                return vp;
+//                
+//                
+//            }
+//        } catch (SQLException ex) {
+//            Logger.getLogger(DBBroker.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//
+//        return vp;
 //    }
 }
 

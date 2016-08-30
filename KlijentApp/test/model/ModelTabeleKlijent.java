@@ -13,7 +13,7 @@ import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class ModelTabeleKlijent  extends AbstractTableModel {
 //    TODO: lista onoga sto su polja u tabeli, agregacija u modelu
@@ -119,12 +119,12 @@ public class ModelTabeleKlijent  extends AbstractTableModel {
     }
     
 //        TODO: Zameni Object za agregaciju
-    public ArrayList<Object> getListaAngazovanja() {
+    public ArrayList<Object> getLista() {
         return lista;
     }
     
 //        TODO: Zameni Object za agregaciju
-    public void setListaDezurstava(ArrayList<Object> lista) {
+    public void setLista(ArrayList<Object> lista) {
         this.lista = lista;
     }
 

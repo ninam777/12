@@ -7,7 +7,7 @@ package pomocneKlase;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class PrikazKlasa {
     //TODO: atributi iz tabele sa serverske strane + konstruktor + get&set

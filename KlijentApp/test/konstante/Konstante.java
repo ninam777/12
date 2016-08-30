@@ -7,7 +7,7 @@ package konstante;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class Konstante {
 //    public static final int VRATI_VRSTE_PROJEKATA = 1;

@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class NitOsvezi extends Thread{
     
@@ -38,3 +38,32 @@ public class NitOsvezi extends Thread{
     }
     
 }
+
+//*UKOLIKO JE KONZOLA
+
+//public class NitOsvezi extends Thread{
+//    
+//    ServerKonzola k;
+//
+//    public NitOsvezi(ServerKonzola k) {
+//        this.k = k;
+//    }
+//
+//    
+//    
+//    
+//
+//    @Override
+//    public void run() {
+//        while (true) {            
+//            k.srediPrikaz();
+//            System.out.println("Osvezio");
+//            try {
+//                sleep(10000);
+//            } catch (InterruptedException ex) {
+//                Logger.getLogger(NitOsvezi.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//        }
+//    }
+//    
+//}

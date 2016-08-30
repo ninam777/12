@@ -16,7 +16,7 @@ import transfer.ServerskiTransferObjekat;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class Komunikacija {
     

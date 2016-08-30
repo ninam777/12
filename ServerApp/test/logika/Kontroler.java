@@ -14,7 +14,7 @@ import pomocneKlase.PrikazKlasa;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class Kontroler {
 
@@ -35,9 +35,9 @@ public class Kontroler {
 //    public ArrayList<Angazovanje> vratiListuAngazovanja() {
 //        db.ucitajDrajver();
 //        db.otvoriKonekciju();
-//        ArrayList<Angazovanje> listaAng = db.vratiListuAngazovanja();
+//        ArrayList<Angazovanje> lista = db.vratiListuAngazovanja();
 //        db.zatvoriKonekciju();
-//        return listaAng;
+//        return lista;
 //    }
 
     

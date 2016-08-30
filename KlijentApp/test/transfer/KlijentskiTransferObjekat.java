@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Nina777
+ * @author student1
  */
 public class KlijentskiTransferObjekat implements Serializable{
     private int operacija;
